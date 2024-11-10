@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Introduction to JavaScript</h1>
+    <p id="p1"></p>
+    <h1>Variables in JavaScript</h1>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <script>
+        document.getElementById("p1").innerHTML="My name is Najah";
+        //This is a comment//
+        var a = 20;
+        var A = 30;
+        var b = 40
+        var B = 50;
+        var c = a + A;
+        var C = b * B;
+        var d = A - C;
+        var D = b / a
+        var e = B % b
+        document.getElementById("p2").innerHTML = c;
+        document.getElementById("p3").innerHTML ="40 multiply by 50 is" + C;
+        document.getElementById("p4").innerHTML = d;
+        document.getElementById("p5").innerHTML = D;
+        document.getElementById("p6").innerHTML = e;
+
+    </script>    
+
+</body>
+</html>

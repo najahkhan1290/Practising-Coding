@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Forms in HTML</title>
+</head>
+<style>
+    body{
+        background-color: lightgrey
+    }
+    input[type="sumbit"]{
+        color: darkslategray
+    }
+    h1{
+        text-align: center
+    }
+    h1:hover{
+        color: blue;
+        text-transform: uppercase
+    }
+    input[type="submit"]:hover{
+        color: blue
+    }
+    label:hover{
+        color: blue
+    }
+    u{
+        color: blue
+    }
+</style>
+<body>
+    <form>
+        <fieldset>
+            <legend><h1>Details Form</h1></legend>
+               <p><b><i>This form must be filled out to help us better understand your needs and assist you throughout your journey. Thank you!<br>For any query call us on <u>+92332223280</u> or visit our website <a href="www.youtube.com">www.helpline.com</a></i></b></p>
+    <label><b>Name:</b></label><br>
+    <input type="text" id="name"><br><br>
+    <label><b>Contact Number:</b></label><br>
+    <input type="Number" id="contact"><br><br>
+    <label><b>Email:</b></label><br>
+    <input type="email" id="email"><br><br>
+    <label>Password</label><br>
+    <input type="password" id="password"><br><br>
+    <label><b>Age:</b></label><br>
+    <input type="number" id="Age"><br><br>
+    <label>Gender: </label><br>
+    <select name="gender" id="gender">
+        <option value="" disabled selected>Select your gender</option>
+        <option value="Man">Man</option>
+        <option value="Woman">Woman</option>
+        <option value="Other">Other</option>
+    </select><br> <br>
+    <label>Current Job: </label><br>
+    <input type="text" id="Current Job"><br><br>
+    <label>Number of Kids: </label><br>
+    <input type="number" id="Number of Kids"><br><br>
+    <label>Kid # 1: </label><br>
+    <input type="text" id="Kid # 1"><br><br>
+    <label>Kid # 2 : </label><br>
+    <input type="text" id="Kid # 2"><br><br>
+    <label>Kid # 3: </label><br>
+    <input type="text" id="Kid # 3"><br><br>
+    <label>Car</label><br> 
+    <select name= "cars" id= "cars"> 
+        <option value="" disabled selected>Select your Car</option>
+        <option value= "audi">Audi</option> 
+        <option value= "bmw">BMW</option> 
+        <option value= "mercedes">Mercedes</option> 
+        <option value= "landcruiser">LandCruiser</option> 
+        <option value= "rangerover">RangerRover</option> 
+    </select><br><br>
+    <input type="submit">
+    </fieldset>
+    </form>
+</body>
+</html>
+    
