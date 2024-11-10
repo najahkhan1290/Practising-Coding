@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope of Variables in JS</title>
+</head>
+<body>
+    <h1>Scope of Variables in JS</h1>
+    <button onclick="myfunction()">Click Me!!
+    </button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        var b = 21;
+        //b is a global var//
+        function myfunction(){
+            var a = 40;
+            document.getElementById("p1").innerHTML = a + b;
+            //a is a local variable//
+        }
+        document.getElementById("p2").innerHTML = b;
+    </script>
+</body>
+</html>
