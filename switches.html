@@ -10,13 +10,10 @@
     <p id="p1"></p>
     <script>
         // Create a new Date object to get the current date and time
-        var date = new Date();
-
-        // Format the date as a string
-        var formattedDate = date.toDateString(); // Example: "Mon Nov 13 2024"
-
-        // Display the date in the paragraph
-        document.getElementById("p1").innerHTML = "Today is " + formattedDate;
+        var date = new Date().getDate();
+        var month = new Date().getMonth() + 1; //becuase the months are starting from 0
+        var year = new Date().getFullYear();
+        document.getElementById("p1").innerHTML = "Today is " + date + "/"+ month + "/" + year;
     </script>
 </body>
 </html>
