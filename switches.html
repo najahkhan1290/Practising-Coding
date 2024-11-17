@@ -3,40 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switches in JS</title>
+    <title>Current Date</title>
 </head>
 <body>
-    <h1>Switches in JS</h1>
+    <h1>Current Date in JavaScript</h1>
     <p id="p1"></p>
     <script>
-        var day;
-        switch (new Date().getDay()){
-            case 0:
-                day = "Sunday";
-                break;
-            case 1:
-                 day = "Monday";
-                break;
-            case 2:                 
-               day = "Tuesday";
-                break; 
-          case 3:
-              day = "Wednesday";
-              break;
-           case 4:
-             day = "Thursday";
-             break;
-          case 5:
-              day = "Friday";
-              break;
-          case 6:
-          day = "Saturday";
-              break;
-             case 7:
-               day = "Sunday";
-               break;
-        }
-        document.getElementById("p1").innerHTML = "Today is " + day;
+        // Create a new Date object to get the current date and time
+        var date = new Date();
+
+        // Format the date as a string
+        var formattedDate = date.toDateString(); // Example: "Mon Nov 13 2024"
+
+        // Display the date in the paragraph
+        document.getElementById("p1").innerHTML = "Today is " + formattedDate;
     </script>
 </body>
 </html>
